@@ -1,42 +1,109 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf1d3;
+  padding: 10px 20px;
+  color: #78A192;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Logo on the left */
+.navbar-logo img {
+  height: 60px; /* Larger logo for desktop */
+  width: auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Title next to the logo */
+.navbar-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -500px;
+  white-space: nowrap;
+}
+
+/* Navigation links on the right */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Individual navigation items */
+.nav-item {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* Link styling */
+.nav-item a {
+  color: #78A192;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+.nav-item a:hover {
+  color: #78A192;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust logo size for smaller screens */
+  .navbar-logo img {
+    height: 50px; /* Slightly smaller for tablets */
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Adjust title font size for smaller screens */
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  /* Adjust navigation links for smaller screens */
+  .navbar-links {
+    gap: 10px;
+  }
+
+  /* Adjust font size for navigation items */
+  .nav-item {
+    font-size: 16px;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media (max-width: 480px) {
+  /* Stack logo, title, and links vertically on very small screens */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
   }
-}
 
-.card {
-  padding: 2em;
-}
+  .navbar-title {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 18px;
+  }
 
-.read-the-docs {
-  color: #888;
+  .navbar-logo img {
+    height: 40px; /* Smaller for mobile */
+  }
+
+  /* Stack navigation links vertically */
+  .navbar-links {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  /* Adjust font size for navigation items */
+  .nav-item {
+    font-size: 14px;
+  }
 }
