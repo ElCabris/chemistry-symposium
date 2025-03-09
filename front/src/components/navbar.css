@@ -1,0 +1,109 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #faf1d3;
+  padding: 10px 20px;
+  color: #78A192;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+/* Logo on the left */
+.navbar-logo img {
+  height: 60px; /* Larger logo for desktop */
+  width: auto;
+}
+
+/* Title next to the logo */
+.navbar-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -400px;
+  white-space: nowrap;
+}
+
+/* Navigation links on the right */
+.navbar-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Individual navigation items */
+.nav-item {
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+/* Link styling */
+.nav-item a {
+  color: #78A192;
+  text-decoration: none;
+}
+
+/* Hover effect for links */
+.nav-item a:hover {
+  color: #78A192;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Adjust logo size for smaller screens */
+  .navbar-logo img {
+    height: 50px; /* Slightly smaller for tablets */
+  }
+
+  /* Adjust title font size for smaller screens */
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  /* Adjust navigation links for smaller screens */
+  .navbar-links {
+    gap: 10px;
+  }
+
+  /* Adjust font size for navigation items */
+  .nav-item {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Stack logo, title, and links vertically on very small screens */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar-title {
+    text-align: left;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .navbar-logo img {
+    height: 40px; /* Smaller for mobile */
+  }
+
+  /* Stack navigation links vertically */
+  .navbar-links {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+
+  /* Adjust font size for navigation items */
+  .nav-item {
+    font-size: 14px;
+  }
+}
