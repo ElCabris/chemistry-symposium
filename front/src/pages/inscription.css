@@ -1,0 +1,80 @@
+/* Background color for the entire page */
+.inscription-container {
+  background-color: #F8F8F8;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style for the heading */
+.inscription-heading {
+  color: #D32121;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-top: 80px;
+}
+
+/* Container for all rectangles and images */
+.rectangles-wrapper {
+  display: flex;
+  justify-content: center; /* Center the rectangles horizontally */
+  gap: 20px; /* Add spacing between rectangles */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Container for each rectangle and image */
+.rectangle-container {
+  width: 30%; /* Adjust width for three columns */
+  max-width: 350px; /* Maximum width for the rectangle */
+  text-align: center;
+}
+
+/* Style for the rectangles */
+.rectangle {
+  width: 100%;
+  height: 75px;
+  background-color: #78A192;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the text inside the rectangles */
+.rectangle-text {
+  color: #F8F8F8;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for the images */
+.rectangle-image {
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+/* Optional: Add hover effect for the images */
+.rectangle-image:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .rectangle-container {
+    width: 45%; /* Two columns for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .rectangle-container {
+    width: 100%; /* One column for mobile */
+  }
+}
