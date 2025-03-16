@@ -10,11 +10,11 @@ function Home() {
     <>
       <h1>II Simposio de Química UdeM</h1>
       <div className="button-container">
-        <button onClick={() => {}} className="btn">
+        <button onClick={() => { }} className="btn">
           Fechas Importantes
         </button>
         <button className="btn" onClick={() => navigate("/register")}>Regístrate ahora</button>
-        <button onClick={() => {}} className="btn">
+        <button onClick={() => { }} className="btn">
           Ubicación y Direcciones
         </button>
       </div>
