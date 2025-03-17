@@ -1,8 +1,11 @@
-/* Background color for the entire page */
+/* Background image for the entire page */
 .inscription-container {
-  background-color: #F8F8F8;
-  min-height: 100vh;
-  padding: 20px;
+  background-image: url('/assets/banner_back.png'); 
+  background-size: cover; 
+  background-position: center;
+  min-height: auto;
+  padding: 100px;
+  padding-top: 80px;
   text-align: center;
 }
 
@@ -69,12 +72,12 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
   .rectangle-container {
-    width: 45%; /* Two columns for tablets */
+    width: 45%;
   }
 }
 
 @media (max-width: 768px) {
   .rectangle-container {
-    width: 100%; /* One column for mobile */
+    width: 100%;
   }
 }

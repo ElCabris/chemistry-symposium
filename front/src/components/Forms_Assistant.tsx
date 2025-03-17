@@ -1,16 +1,28 @@
 import React from 'react';
+import './Forms_Poster.css';
 
 const AssistantForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
   return (
-    <div className="form-overlay">
+    <div className="form-container">
       <h2>Formulario Asistente</h2>
       <form>
-        <input type="text" placeholder="Nombre Completo" />
-        <input type="email" placeholder="Email" />
-        <button type="submit">Enviar</button>
-        <input type="hidden" name="Rol" value="Asistente" />
+        <div className="input-group">
+          <input type="text" placeholder="Nombre Completo" required />
+        </div>
+        <div className="input-group">
+          <input type="email" placeholder="Email" required />
+        </div>
+        <div className="input-group">
+          <input type="text" placeholder="Institución Educativa" required />
+        </div>
+        <div className="input-group">
+          <input type="hidden" name="Rol" value="Asistente" />
+        </div>
+        <div className="input-group">
+          <button type="submit" className="submit-button">Enviar</button>
+        </div>
       </form>
-      <button onClick={onClose}>Cerrar</button>
+      <button onClick={onClose} className="close-button">Cerrar</button>
     </div>
   );
 };

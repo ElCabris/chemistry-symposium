@@ -17,6 +17,7 @@ function Navbar() {
           {/* Navigation links on the right */}
           <div className="navbar-links">
             <div className="nav-item"><a href="#">Invitados</a></div>
+            <div className="nav-item"><a href="#">Inscripción</a></div>
             <div className="nav-item"><a href="#">Contacto</a></div>
             <div className="nav-item"><a href="#">Ubicación</a></div>
             <div className="nav-item"><a href="#">Memorias</a></div>
