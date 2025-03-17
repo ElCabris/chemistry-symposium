@@ -68,8 +68,7 @@ const Inscription: React.FC = () => {
       {activeForm === 'assistant' && (
         <AssistantForm onClose={() => setActiveForm(null)} />
       )}
-    </div>
-  );
+    </div> );
 };
 
 export default Inscription;
