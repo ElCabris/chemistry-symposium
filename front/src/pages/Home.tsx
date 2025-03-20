@@ -1,8 +1,8 @@
 import "./home.css";
 import { useNavigate } from "react-router-dom";
-import Gmail_icon from "/assets/Gmail_Logo.png";
-import X_icon from "/assets/X.png";
-import Ig_icon from "/assets/Instagram_logo.png";
+import Gmail_icon from "/assets/gmail_logo.webp";
+import X_icon from "/assets/x.webp";
+import Ig_icon from "/assets/instragram_logo.webp";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();

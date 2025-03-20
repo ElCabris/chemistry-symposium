@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
       <nav className="navbar">
         {/* Logo on the left */}
         <div className="navbar-logo">
-          <img src="/assets/logo.png" alt="logo" onClick={() => { navigate("/") }} />
+          <img src="/assets/logo.webp" alt="logo" onClick={() => { navigate("/") }} />
         </div>
 
         {/* Title in the center */}
