@@ -19,7 +19,8 @@
 .navbar-logo img {
   height: 60px; 
   width: auto;
-  flex-shrink: 0; 
+  flex-shrink: 0;
+  cursor: pointer; 
 }
 
 /* Title next to the logo */
@@ -30,6 +31,7 @@
   flex-grow: 1; 
   margin-left: 20px; 
   text-align: left; 
+  cursor: pointer; 
 }
 
 /* Navigation links on the right */
