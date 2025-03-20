@@ -4,7 +4,7 @@ import Gmail_icon from "/assets/Gmail_Logo.png";
 import X_icon from "/assets/X.png";
 import Ig_icon from "/assets/Instagram_logo.png";
 
-function Home() {
+const Home: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>

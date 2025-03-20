@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import './navbar.css';
 
-function Navbar() {
+const Navbar: React.FC = () => {
   const navigate = useNavigate();
   return (
     <>
