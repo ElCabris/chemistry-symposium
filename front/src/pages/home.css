@@ -1,58 +1,59 @@
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background: url('/assets/banner_back.jpg') no-repeat center center/cover, #F8F8F8;
-            text-align: center;
-            font-family: Arial, sans-serif;
-        }
-        h1 {
-            color: #D32121;
-            background: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-        }
-        .button-container {
-            margin-top: 20px;
-        }
-        .btn {
-            display: inline-block;
-            margin: 10px;
-            padding: 12px 20px;
-            font-size: 16px;
-            color:#545E56;
-            background: #F4F1DE;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .btn:hover {
-            background: #78A192;
-        }
-        .social-icons {
-            position: absolute;
-            bottom: 20px;
-            display: flex;
-            gap: 15px;
-        }
-        .social-icons a {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: #F4F1DE;
-            border-radius: 50%;
-            text-decoration: none;
-            overflow: hidden;
-        }
-        .social-icons img {
-            width: 60%;
-            height: auto;
-            object-fit: contain;
-        }
+.body-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background: url("/assets/banner_back.jpg") no-repeat center center/cover,
+    #f8f8f8;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: #d32121;
+  background: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+.button-container {
+  margin-top: 20px;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #545e56;
+  background: #f4f1de;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover {
+  background: #78a192;
+}
+.social-icons {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+}
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f1de;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+}
+.social-icons img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}

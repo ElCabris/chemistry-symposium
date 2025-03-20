@@ -1,0 +1,117 @@
+/* Form Container */
+.form-container {
+  max-width: 38em;
+  padding: 2em;
+  margin: 2em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form Heading */
+.form-container h2 {
+  color: #D32121;
+  margin-bottom: 1.5em;
+  font-size: 24px;
+}
+
+/* Input Fields and Dropdowns */
+.input-group {
+  margin-bottom: 1.5em;
+  text-align: left; /* Align labels to the left */
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: 14px;
+  color: #333;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 1em;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  transition: all 0.35s ease-in-out;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: 0;
+  border-color: #D32121;
+}
+
+/* Dropdown Styling */
+.input-group select {
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23D32121%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 0.65em auto;
+}
+
+/* Buttons */
+.submit-button,
+.close-button,
+.download-button {
+  width: 100%;
+  padding: 1em;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.submit-button {
+  background-color: #D32121;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #1C0221;
+}
+
+.close-button {
+  background-color: #faf1d3;
+  color: #333;
+  margin-top: 1em;
+}
+
+.close-button:hover {
+  background-color: #ccc;
+}
+
+.download-button {
+  background-color: #78A192; /* Green color to match your theme */
+  color: #fff;
+}
+
+.download-button:hover {
+  background-color: #545E56; /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 540px) {
+  .form-container {
+    padding: 1em;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  .input-group input,
+  .input-group select,
+  .submit-button,
+  .close-button,
+  .download-button {
+    font-size: 12px;
+    padding: 0.8em;
+  }
+}

@@ -17,29 +17,37 @@
 
 /* Logo on the left */
 .navbar-logo img {
-  height: 60px; /* Larger logo for desktop */
+  height: 60px; 
   width: auto;
+  flex-shrink: 0;
+  cursor: pointer; 
 }
 
 /* Title next to the logo */
 .navbar-title {
   font-size: 30px;
   font-weight: bold;
-  margin-left: -400px;
   white-space: nowrap;
+  flex-grow: 1; 
+  margin-left: 20px; 
+  text-align: left; 
+  cursor: pointer; 
 }
 
 /* Navigation links on the right */
 .navbar-links {
   display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 20px; /* Reduce gap between links */
+  flex-wrap: wrap; /* Allow wrapping of links */
+  justify-content: flex-end; /* Align links to the right */
+  align-items: center; /* Center links vertically */
 }
 
 /* Individual navigation items */
 .nav-item {
   font-size: 20px;
   white-space: nowrap;
+  margin: 5px 0; /* Add vertical margin to prevent overlap */
 }
 
 /* Link styling */
@@ -55,55 +63,70 @@
 }
 
 /* Responsive Design */
+
+/* For medium screens (e.g., split-screen on desktop) */
+@media (max-width: 1200px) {
+  .navbar-title {
+    font-size: 24px; /* Slightly smaller font size */
+    margin-left: 10px; /* Reduce space between logo and title */
+  }
+
+  .navbar-links {
+    gap: 15px; /* Reduce gap between links */
+  }
+
+  .nav-item {
+    font-size: 18px; /* Slightly smaller font size for links */
+  }
+}
+
+/* For tablets */
 @media (max-width: 768px) {
-  /* Adjust logo size for smaller screens */
   .navbar-logo img {
     height: 50px; /* Slightly smaller for tablets */
   }
 
-  /* Adjust title font size for smaller screens */
   .navbar-title {
-    font-size: 20px;
+    font-size: 20px; /* Smaller font size for tablets */
+    margin-left: 10px; /* Reduce space between logo and title */
   }
 
-  /* Adjust navigation links for smaller screens */
   .navbar-links {
-    gap: 10px;
+    gap: 10px; /* Reduce gap between links */
   }
 
-  /* Adjust font size for navigation items */
   .nav-item {
-    font-size: 16px;
+    font-size: 16px; /* Smaller font size for navigation items */
   }
 }
 
+/* For mobile devices */
 @media (max-width: 480px) {
-  /* Stack logo, title, and links vertically on very small screens */
   .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 10px;
-  }
-
-  .navbar-title {
-    text-align: left;
-    margin: 10px 0;
-    font-size: 18px;
+    flex-wrap: wrap; /* Allow wrapping of navbar items */
+    padding: 10px; /* Reduce padding */
   }
 
   .navbar-logo img {
-    height: 40px; /* Smaller for mobile */
+    height: 40px; /* Smaller logo for mobile */
   }
 
-  /* Stack navigation links vertically */
+  .navbar-title {
+    font-size: 18px; /* Smaller font size for mobile */
+    margin-left: 10px; /* Reduce space between logo and title */
+    flex-basis: 100%; /* Force the title to take full width */
+    text-align: center; /* Center the title */
+    margin-top: 10px; /* Add some space above the title */
+  }
+
   .navbar-links {
-    flex-direction: column;
-    gap: 5px;
-    width: 100%;
+    flex-basis: 100%; /* Force the links to take full width */
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Reduce gap between links */
+    margin-top: 10px; /* Add some space above the links */
   }
 
-  /* Adjust font size for navigation items */
   .nav-item {
-    font-size: 14px;
+    font-size: 14px; /* Smaller font size for mobile */
   }
 }
