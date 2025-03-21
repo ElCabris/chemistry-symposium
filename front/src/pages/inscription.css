@@ -1,7 +1,7 @@
 /* Background image for the entire page */
 .inscription-container {
-  background-image: url('/assets/banner_back.png'); 
-  background-size: cover; 
+  background-image: url('/assets/banner_back.webp');
+  background-size: cover;
   background-position: center;
   min-height: auto;
   padding: 100px;
@@ -21,15 +21,20 @@
 /* Container for all rectangles and images */
 .rectangles-wrapper {
   display: flex;
-  justify-content: center; /* Center the rectangles horizontally */
-  gap: 20px; /* Add spacing between rectangles */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  justify-content: center;
+  /* Center the rectangles horizontally */
+  gap: 20px;
+  /* Add spacing between rectangles */
+  flex-wrap: wrap;
+  /* Allow wrapping on smaller screens */
 }
 
 /* Container for each rectangle and image */
 .rectangle-container {
-  width: 30%; /* Adjust width for three columns */
-  max-width: 350px; /* Maximum width for the rectangle */
+  width: 30%;
+  /* Adjust width for three columns */
+  max-width: 350px;
+  /* Maximum width for the rectangle */
   text-align: center;
 }
 
