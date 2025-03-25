@@ -1,9 +1,9 @@
 /* Background image for the entire page */
 .inscription-container {
-  background-image: url('/assets/banner_back.png'); 
+  background-image: url('/assets/back_main.png'); 
   background-size: cover; 
   background-position: center;
-  min-height: auto;
+  min-height: 100vh; /* Ensures it covers the whole viewport */
   padding: 100px;
   padding-top: 80px;
   text-align: center;

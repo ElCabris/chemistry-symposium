@@ -60,6 +60,7 @@
 .nav-item a:hover {
   color: #78A192;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Responsive Design */
