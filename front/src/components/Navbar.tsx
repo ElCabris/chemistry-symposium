@@ -8,7 +8,7 @@ const Navbar: React.FC = () => {
       <nav className="navbar">
         {/* Logo on the left */}
         <div className="navbar-logo">
-          <img src="/assets/logo.png" alt="logo" onClick={() => { navigate("/") }} />
+          <img src="/assets/logo.webp" alt="logo" onClick={() => { navigate("/") }} />
         </div>
 
         {/* Title in the center */}
@@ -17,10 +17,10 @@ const Navbar: React.FC = () => {
         </div>
         {/* Navigation links on the right */}
         <div className="navbar-links">
-          <div className="nav-item"><a onClick={() => navigate("/invitees")}>Invitados</a></div>
+          <div className="nav-item"><a onClick={() => navigate("/")}>Invitados</a></div>
           <div className="nav-item"><a onClick={() => navigate("/register")}>Inscripción</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Contacto</a></div>
-          <div className="nav-item"><a onClick={() => navigate("/location")}>Ubicación</a></div>
+          <div className="nav-item"><a onClick={() => navigate("/")}>Ubicación</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Memorias</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Comités</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Cronograma</a></div>

@@ -1,97 +1,99 @@
 /* Form Container */
 .form-container {
-    max-width: 38em;
-    padding: 2em;
-    margin: 2em auto;
-    background-color: #fff;
-    border-radius: 4.2px;
-    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  /* Form Heading */
-  .form-container h2 {
-    color: #D32121;
-    margin-bottom: 1.5em;
-    font-size: 24px;
-  }
-  
-  /* Input Fields */
-  .input-group {
-    margin-bottom: 1.5em;
-  }
-  
-  .input-group input {
-    width: 100%;
+  max-width: 38em;
+  padding: 2em;
+  margin: 2em auto;
+  background-color: #fff;
+  border-radius: 4.2px;
+  box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Form Heading */
+.form-container h2 {
+  color: #D32121;
+  margin-bottom: 1.5em;
+  font-size: 24px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 1.5em;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 1em;
+  font-size: 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  transition: all 0.35s ease-in-out;
+}
+
+.input-group input:focus {
+  outline: 0;
+  border-color: #D32121;
+}
+
+/* Buttons */
+.submit-button,
+.close-button,
+.download-button {
+  width: 100%;
+  padding: 1em;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+}
+
+.submit-button {
+  background-color: #D32121;
+  color: #fff;
+}
+
+.submit-button:hover {
+  background-color: #1C0221;
+}
+
+.close-button {
+  background-color: #faf1d3;
+  color: #333;
+  margin-top: 1em;
+}
+
+.close-button:hover {
+  background-color: #ccc;
+}
+
+.download-button {
+  background-color: #78A192;
+  /* Green color to match your theme */
+  color: #fff;
+}
+
+.download-button:hover {
+  background-color: #545E56;
+  /* Darker green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 540px) {
+  .form-container {
     padding: 1em;
-    font-size: 14px;
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
-    background-color: #f9f9f9;
-    transition: all 0.35s ease-in-out;
   }
-  
-  .input-group input:focus {
-    outline: 0;
-    border-color: #D32121;
+
+  .form-container h2 {
+    font-size: 20px;
   }
-  
-  /* Buttons */
+
+  .input-group input,
   .submit-button,
   .close-button,
   .download-button {
-    width: 100%;
-    padding: 1em;
-    font-size: 14px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.35s ease-in-out;
+    font-size: 12px;
+    padding: 0.8em;
   }
-  
-  .submit-button {
-    background-color: #D32121;
-    color: #fff;
-  }
-  
-  .submit-button:hover {
-    background-color: #1C0221;
-  }
-  
-  .close-button {
-    background-color: #faf1d3;
-    color: #333;
-    margin-top: 1em;
-  }
-  
-  .close-button:hover {
-    background-color: #ccc;
-  }
-  
-  .download-button {
-    background-color: #78A192; /* Green color to match your theme */
-    color: #fff;
-  }
-  
-  .download-button:hover {
-    background-color: #545E56; /* Darker green on hover */
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 540px) {
-    .form-container {
-      padding: 1em;
-    }
-  
-    .form-container h2 {
-      font-size: 20px;
-    }
-  
-    .input-group input,
-    .submit-button,
-    .close-button,
-    .download-button {
-      font-size: 12px;
-      padding: 0.8em;
-    }
-  }
+}

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './inscription.css';
-import speaker from "/assets/speaker.jpg";
-import assistant from "/assets/assistant.png";
-import poster from "/assets/poster.jpg";
+import speaker from "/assets/speaker.webp";
+import assistant from "/assets/assistant.webp";
+import poster from "/assets/poster.webp";
 import SpeakerForm from '../components/Forms_Speaker';
 import PosterForm from '../components/Forms_Poster';
 import AssistantForm from '../components/Forms_Assistant';
