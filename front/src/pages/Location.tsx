@@ -41,7 +41,7 @@ const Location: React.FC = () => {
         {/* University Map Image */}
         <div className="university-map-container">
           <img
-            src="/assets/university_map.png"
+            src="/assets/university_map_no_back.webp"
             alt="Mapa de la Universidad de Medellín"
             className="university-map"
           />
