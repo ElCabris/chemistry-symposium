@@ -16,26 +16,22 @@
   font-weight: bold;
   margin-bottom: 20px;
   padding-top: 80px;
+  font-family: sans-serif;
 }
 
 /* Container for all rectangles and images */
 .rectangles-wrapper {
   display: flex;
   justify-content: center;
-  /* Center the rectangles horizontally */
   gap: 20px;
-  /* Add spacing between rectangles */
   flex-wrap: wrap;
-  /* Allow wrapping on smaller screens */
 }
 
-/* Container for each rectangle and image */
 .rectangle-container {
   width: 30%;
-  /* Adjust width for three columns */
   max-width: 350px;
-  /* Maximum width for the rectangle */
   text-align: center;
+  font-family: sans-serif;
 }
 
 /* Style for the rectangles */
@@ -55,6 +51,7 @@
   color: #F8F8F8;
   font-size: 18px;
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 /* Style for the images */

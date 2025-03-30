@@ -6,19 +6,27 @@
   align-items: center;
   height: 100vh;
   justify-content: center;
-  background: url("/assets/back_main.webp") no-repeat center center/cover,
-    #f8f8f8;
+  background: url("/assets/back_main.webp") no-repeat center center/cover, #f8f8f8;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  position: relative;
+  overflow-x: hidden;
 }
 
+:root {
+  --title-font-size: 40px;
+  --subtitle-font-size: 24px;
+}
+
+/* Title Section */
 .title-container {
   margin-left: -750px;
-  width: 600px; /* Add a fixed width */
+  width: 600px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* This will center the text block */
+  align-items: center;
   font-size: large;
+  z-index: 2;
 }
 
 h1 {
@@ -30,18 +38,13 @@ h1 {
   display: flex;
   flex-direction: column;
   line-height: 1.2;
-  text-align: center; /* Center text alignment */
-  width: 100%; /* Take full width of container */
+  text-align: center;
+  width: 100%;
 }
 
-.title-line1 {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center; 
-}
-
+.title-line1,
 .title-line2 {
-  font-size: 48px;
+  font-size: var(--title-font-size);
   font-weight: bold;
   text-align: center;
 }
@@ -49,20 +52,24 @@ h1 {
 .subtitle {
   margin-top: 2px;
   color: #d32121;
-  text-align: center; 
+  text-align: center;
   width: 100%;
 }
 
-.subtitle-line1, .subtitle-line2 {
+.subtitle-line1,
+.subtitle-line2 {
   margin: 5px 0;
-  font-size: 24px;
-  text-align: center; 
+  font-size: var(--subtitle-font-size);
+  text-align: center;
   padding-left: 0;
 }
 
+/* Buttons */
 .button-container {
   margin-top: 20px;
   margin-left: -600px;
+  position: relative;
+  z-index: 1;
 }
 
 .btn {
@@ -82,33 +89,6 @@ h1 {
   background: #78a192;
 }
 
-.social-icons {
-  position: fixed; 
-  right: 35px;    
-  bottom: 20px;   
-  display: flex;
-  gap: 15px;
-  z-index: 100;   
-}
-
-.social-icons a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #f4f1de;
-  border-radius: 50%;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-.social-icons img {
-  width: 60%;
-  height: auto;
-  object-fit: contain;
-}
-
 .button-group {
   display: flex;
   flex-direction: column;
@@ -116,6 +96,8 @@ h1 {
   margin-top: 30px;
   margin-left: -600px;
   width: 600px;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-main {
@@ -143,7 +125,6 @@ h1 {
   margin: 0 10px;
   transition: all 0.3s ease;
   font-weight: bold;
-  
 }
 
 .secondary-buttons {
@@ -153,8 +134,218 @@ h1 {
   margin-left: -140px;
 }
 
-.btn-main:hover, .btn-secondary:hover {
-  /*background: #78a192; */
+.btn-main:hover,
+.btn-secondary:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Social Icons */
+.social-icons {
+  position: fixed;
+  right: 35px;
+  bottom: 20px;
+  display: flex;
+  gap: 15px;
+  z-index: 100;
+}
+
+.social-icons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f4f1de;
+  border-radius: 50%;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.social-icons img {
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .title-container {
+    margin-left: -650px;
+  }
+  .button-group,
+  .button-container {
+    margin-left: -500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .title-container {
+    margin-left: -550px;
+  }
+  .button-group,
+  .button-container {
+    margin-left: -400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .body-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    justify-content: flex-start;
+    min-height: 100vh;
+    height: auto;
+  }
+  
+  .title-container,
+  .button-group,
+  .button-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 600px;
+    transform: none !important;
+    position: static;
+    padding-top: 60px;
+  }
+  
+  .button-group {
+    align-items: center;
+    margin-top: -10px;
+  }
+  
+  .secondary-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+  
+  .btn-main {
+    margin-left: 0;
+  }
+  
+  .social-icons {
+    position: static;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title-line1,
+  .title-line2 {
+    font-size: 36px;
+  }
+  
+  .subtitle-line1,
+  .subtitle-line2 {
+    font-size: 20px;
+  }
+  
+  .btn-main {
+    padding: 14px 30px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn-secondary {
+    padding: 10px 20px;
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+/* Landscape Orientation Fixes */
+@media (max-height: 500px) and (orientation: landscape),
+       (max-width: 768px) and (orientation: landscape) {
+  .body-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 100vh;
+    height: auto;
+    justify-content: flex-start;
+    overflow-y: auto;
+  }
+  
+  .title-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    transform: none;
+    position: static;
+    padding-top: 60px;
+  }
+  
+  .button-group,
+  .button-container {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    transform: none;
+    position: static;
+    margin-top: -10px;
+  }
+  
+  .button-group {
+    align-items: center;
+  }
+  
+  .secondary-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+  
+  .btn-main {
+    margin-left: 0;
+    width: auto;
+  }
+  
+  .social-icons {
+    position: static;
+    justify-content: center;
+    margin: 20px auto;
+    padding-bottom: 20px;
+  }
+  
+  .title-line1,
+  .title-line2 {
+    font-size: calc(var(--title-font-size) * 0.7);
+  }
+  
+  .subtitle-line1,
+  .subtitle-line2 {
+    font-size: calc(var(--subtitle-font-size) * 0.7);
+  }
+}
+
+@media (max-height: 400px) and (orientation: landscape) {
+  .title-line1,
+  .title-line2 {
+    font-size: calc(var(--title-font-size) * 0.6);
+    line-height: 1.1;
+  }
+  
+  .subtitle-line1,
+  .subtitle-line2 {
+    font-size: calc(var(--subtitle-font-size) * 0.6);
+  }
+  
+  .btn-main {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-secondary {
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+  
+  .button-group {
+    margin-top: 10px;
+  }
 }
