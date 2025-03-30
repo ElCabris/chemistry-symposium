@@ -7,6 +7,8 @@
   border-radius: 4.2px;
   box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
   text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* Form Heading */
@@ -14,6 +16,7 @@
   color: #D32121;
   margin-bottom: 1.5em;
   font-size: 24px;
+  font-family: sans-serif;
 }
 
 /* Input Fields */
@@ -29,6 +32,7 @@
   border-radius: 3px;
   background-color: #f9f9f9;
   transition: all 0.35s ease-in-out;
+  font-family: sans-serif;
 }
 
 .input-group input:focus {
@@ -47,6 +51,7 @@
   border-radius: 3px;
   cursor: pointer;
   transition: all 0.35s ease-in-out;
+  font-family: sans-serif;
 }
 
 .submit-button {
@@ -62,6 +67,7 @@
   background-color: #faf1d3;
   color: #333;
   margin-top: 1em;
+  font-family: sans-serif;
 }
 
 .close-button:hover {
@@ -70,8 +76,8 @@
 
 .download-button {
   background-color: #78A192;
-  /* Green color to match your theme */
   color: #fff;
+  font-family: sans-serif;
 }
 
 .download-button:hover {
