@@ -21,17 +21,20 @@
   width: auto;
   flex-shrink: 0;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-/* Title next to the logo */
 .navbar-title {
   font-size: 30px;
   font-weight: bold;
   white-space: nowrap;
   flex-grow: 1;
-  margin-left: 20px;
+  margin-left: -300px;
   text-align: left;
   cursor: pointer;
+  overflow: hidden;        /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+  max-width: fit-content;  /* Or set a fixed max-width like 200px */
 }
 
 /* Navigation links on the right */

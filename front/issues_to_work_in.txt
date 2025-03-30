@@ -1,0 +1,3 @@
+1. Fix the background image bug that happens everytime the forms for each category is shown in the inscription page.
+2. Fix the issue that the SIQUI 2025 title that shows in the navigation bar, the rectangle where the words are located is very large and it's not good for the functionality of the web page.
+3. When the actual information of the place where the event will take place (inside of the university i mean), an arrow that points the green rectangle to the university map must be added and also the image of the location of the event must be updated in case that the event does not takes place at Block 11. 
