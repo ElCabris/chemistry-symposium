@@ -1,7 +1,7 @@
 import Inscription from "./pages/Inscription.tsx";
 import Home from "./pages/Home.tsx"
 import Navbar from "./components/Navbar.tsx"
-import Location from './pages/Location';
+import Location from './pages/Location.tsx';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

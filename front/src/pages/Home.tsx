@@ -9,17 +9,29 @@ const Home: React.FC = () => {
   return (
     <>
       <div className="body-container">
-        <h1>II Simposio de Química UdeM</h1>
-        <div className="button-container">
-          <button onClick={() => { }} className="btn">
-            Fechas Importantes
+        <div className="title-container">
+          <h1>
+            <span className="title-line1">II SIMPOSIO DE QUÍMICA</span>
+            <span className="title-line2">UDEM</span>
+          </h1>
+          <div className="subtitle">
+            <p className="subtitle-line1">La química para todos</p>
+            <p className="subtitle-line2">Octubre del 37 al 34</p>
+          </div>
+        </div>
+        
+        <div className="button-group">
+          <button className="btn-main" onClick={() => navigate("/register")}>
+            Regístrate acá
           </button>
-          <button className="btn" onClick={() => navigate("/register")}>
-            Regístrate ahora
-          </button>
-          <button onClick={() => navigate("/location")} className="btn">
-            Ubicación y Direcciones
-          </button>
+          <div className="secondary-buttons">
+            <button onClick={() => { }} className="btn-secondary">
+              Fechas importantes
+            </button>
+            <button onClick={() => navigate("/location")} className="btn-secondary">
+              Ubicación y direcciones
+            </button>
+          </div>
         </div>
 
         <div className="social-icons">

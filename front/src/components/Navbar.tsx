@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
           <div className="nav-item"><a onClick={() => navigate("/")}>Invitados</a></div>
           <div className="nav-item"><a onClick={() => navigate("/register")}>Inscripción</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Contacto</a></div>
-          <div className="nav-item"><a onClick={() => navigate("/")}>Ubicación</a></div>
+          <div className="nav-item"><a onClick={() => navigate("/location")}>Ubicación</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Memorias</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Comités</a></div>
           <div className="nav-item"><a onClick={() => navigate("/")}>Cronograma</a></div>
