@@ -1,0 +1,143 @@
+.thematic-container {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 20px 0;
+    position: relative;
+    background: 
+      linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+      url("/assets/back_banner_rest.webp") no-repeat center center/cover;
+    background-attachment: fixed;
+  }
+  
+  .thematic-header {
+    display: flex;
+    align-items: center;
+    background-color: #faf1d3;
+    width: 90%; 
+    margin: 0px 50px 30px; 
+    padding: 0 20px;
+    border-radius: 8px;
+    height: 100px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 
+    0 6px 12px rgba(0,0,0,0.1),
+    inset 0 0 0 1px #3F0D12;
+  }
+  .thematic-grid-container {
+    width: 90%; /* Match header width */
+    margin: 0 auto; 
+    box-shadow: 
+    0 6px 12px rgba(0,0,0,0.1),
+  }  
+  
+  .thematic-logo {
+    height: 80px;
+    margin-right: 30px;
+  }
+  
+  .thematic-title {
+    color: #3F0D12;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+    font-family: sans-serif;
+  }
+  
+  .thematic-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px; 
+    margin-bottom: 20px;
+    
+  }
+  
+  .thematic-card {
+    background-color: #faf1d3;
+    padding: 20px;
+    border-radius: 8px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); 
+    border: 1px solid #e0e0e0; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 
+    0 6px 12px rgba(0,0,0,0.1),
+    inset 0 0 0 1px #3F0D12;
+  }
+
+  .thematic-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .card-title-box {
+    background-color: #9ED0BE;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 
+    0 6px 12px rgba(0,0,0,0.1),
+    inset 0 0 0 1px #3F0D12;
+  }
+  
+  .card-title-box h3 {
+    margin: 0;
+    color: #3F0D12;
+    font-size: 1.2rem;
+  }
+  
+  .card-text {
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+  
+/* Mobile adjustments - NEW SOLUTION */
+@media (max-width: 768px) {
+    .thematic-container {
+      width: 90%; 
+      margin: 0 auto 0 10%; 
+      padding: 20px 0 40px 1%; 
+      background-attachment: scroll; 
+      text-align: center;
+    }
+  
+    .thematic-header,
+    .thematic-grid-container {
+      width: 100%; /* Full width of the shifted container */
+      padding: 20px;
+      padding-left: 0px;
+      margin-left: -15%
+    }
+    .thematic-title {
+        color: #3F0D12;
+        font-size: 2.0rem;
+        font-weight: bold;
+        margin: 0 auto;
+        font-family: sans-serif;
+      }
+  
+    .thematic-grid {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      width: 80%;
+      margin-left: -8%; 
+    }
+  
+    .thematic-card {
+      width: 110%; 
+      margin-left: -5%; 
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.1); 
+    }
+
+    .thematic-logo {
+        height: 90;
+        margin-right: 10px
+      }
+  }
+  
