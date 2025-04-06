@@ -6,7 +6,7 @@
   
   /* Left Side: Google Maps */
   .map-container {
-    flex: 0.55; /* Reduce the width of the map container */
+    flex: 0.55; 
     display: flex;
     align-items: stretch; /* Ensure the map stretches to the bottom */
     position: relative;
@@ -34,16 +34,17 @@
     font-size: 1.8rem; 
     margin-bottom: 8px;
     text-align: center; /* Center the title */
-    padding-top: 75px;
+    padding-top: 45px;
   }
   
   .text {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
     text-align: left;
     margin-bottom: 15px;
     max-width: 80%; /* Limit width to prevent text from being too wide */
     color: #3f0d12;
+    font-family: sans-serif;
   }
   
   .text a {
@@ -68,13 +69,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px; /* Add margin to the left to push it to the right */
+    margin-left: 20px; 
   }
   
   .reminder-text {
     color: #faf1d3;
     font-size: 15px; 
     margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
   }
   
   /* University Map Image */
