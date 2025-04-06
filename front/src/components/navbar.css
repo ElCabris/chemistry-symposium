@@ -13,6 +13,8 @@
   width: 100%;
   z-index: 1000;
   box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 /* Logo on the left */
@@ -21,30 +23,29 @@
   width: auto;
   flex-shrink: 0;
   cursor: pointer;
+  margin-left: 10px;
 }
 
-/* Title next to the logo */
 .navbar-title {
   font-size: 30px;
   font-weight: bold;
   white-space: nowrap;
   flex-grow: 1;
-  margin-left: 20px;
+  margin-left: -300px;
   text-align: left;
   cursor: pointer;
+  overflow: hidden;        /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis if text overflows */
+  max-width: fit-content;  /* Or set a fixed max-width like 200px */
 }
 
 /* Navigation links on the right */
 .navbar-links {
   display: flex;
   gap: 20px;
-  /* Reduce gap between links */
   flex-wrap: wrap;
-  /* Allow wrapping of links */
   justify-content: flex-end;
-  /* Align links to the right */
   align-items: center;
-  /* Center links vertically */
 }
 
 /* Individual navigation items */
@@ -53,7 +54,6 @@
   white-space: nowrap;
   margin: 5px 0;
   cursor: pointer;
-  /* Add vertical margin to prevent overlap */
 }
 
 /* Link styling */
@@ -66,6 +66,7 @@
 .nav-item a:hover {
   color: #78A192;
   text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Responsive Design */
@@ -74,19 +75,15 @@
 @media (max-width: 1200px) {
   .navbar-title {
     font-size: 24px;
-    /* Slightly smaller font size */
     margin-left: 10px;
-    /* Reduce space between logo and title */
   }
 
   .navbar-links {
     gap: 15px;
-    /* Reduce gap between links */
   }
 
   .nav-item {
     font-size: 18px;
-    /* Slightly smaller font size for links */
   }
 }
 
@@ -94,24 +91,19 @@
 @media (max-width: 768px) {
   .navbar-logo img {
     height: 50px;
-    /* Slightly smaller for tablets */
   }
 
   .navbar-title {
     font-size: 20px;
-    /* Smaller font size for tablets */
     margin-left: 10px;
-    /* Reduce space between logo and title */
   }
 
   .navbar-links {
     gap: 10px;
-    /* Reduce gap between links */
   }
 
   .nav-item {
     font-size: 16px;
-    /* Smaller font size for navigation items */
   }
 }
 
@@ -119,42 +111,29 @@
 @media (max-width: 480px) {
   .navbar {
     flex-wrap: wrap;
-    /* Allow wrapping of navbar items */
     padding: 10px;
-    /* Reduce padding */
   }
 
   .navbar-logo img {
     height: 40px;
-    /* Smaller logo for mobile */
   }
 
   .navbar-title {
     font-size: 18px;
-    /* Smaller font size for mobile */
     margin-left: 10px;
-    /* Reduce space between logo and title */
     flex-basis: 100%;
-    /* Force the title to take full width */
     text-align: center;
-    /* Center the title */
     margin-top: 10px;
-    /* Add some space above the title */
   }
 
   .navbar-links {
     flex-basis: 100%;
-    /* Force the links to take full width */
     justify-content: center;
-    /* Center the links */
     gap: 10px;
-    /* Reduce gap between links */
     margin-top: 10px;
-    /* Add some space above the links */
   }
 
   .nav-item {
     font-size: 14px;
-    /* Smaller font size for mobile */
   }
 }
