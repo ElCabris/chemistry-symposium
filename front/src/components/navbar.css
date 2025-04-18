@@ -1,25 +1,27 @@
-/* Navbar container */
+/* Navbar container - Relative version */
 .navbar {
+  position: relative;
+  width: 100vw; /* Use viewport width */
+  margin: 0;
+  padding: 10px calc(20px - (100vw - 100%) / 2); /* Adjust for scrollbar */
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #faf1d3;
-  padding: 10px 20px;
   color: #78A192;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
   z-index: 1000;
   box-sizing: border-box;
   font-family: sans-serif;
   font-weight: bold;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 /* Logo on the left */
 .navbar-logo img {
-  height: 60px;
+  height: 70px;
   width: auto;
   flex-shrink: 0;
   cursor: pointer;

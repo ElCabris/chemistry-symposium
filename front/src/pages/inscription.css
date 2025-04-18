@@ -1,15 +1,16 @@
 /* Background image for the entire page */
 .inscription-container {
-  background-image: url('/assets/banner_back.webp');
-  background-size: cover;
-  background-position: center;
+  background: 
+      linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+      url("/assets/back_banner_rest.webp") no-repeat center center/cover;
+  background-attachment: fixed;
   min-height: 100vh; /* Ensures it covers the whole viewport */
   padding: 100px;
-  padding-top: 80px;
+  padding-top: 0px;
   text-align: center;
 }
 
-/* Style for the heading */
+
 .inscription-heading {
   color: #D32121;
   font-size: 24px;
