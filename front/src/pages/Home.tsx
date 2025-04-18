@@ -9,8 +9,6 @@ import ThematicLines from "../components/Thematic_Lines";
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
-  
-  // Function to handle navigation to specific parts
   const handleDateBoxClick = (part: string) => {
     navigate(`/${part}`);
   };
