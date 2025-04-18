@@ -28,7 +28,7 @@ const Home: React.FC = () => {
               <p className="subtitle-line2">Octubre del 37 al 34</p>
             </div>
           </div>
-          
+
           <div className="button-group">
             <button className="btn-main" onClick={() => navigate("/register")}>
               Regístrate acá
@@ -71,7 +71,7 @@ const Home: React.FC = () => {
           <br /><br />
           Este evento será certificable y se publicarán memorias del simposio, que estarán disponibles para todos los participantes. Además, los trabajos presentados podrán ser sometidos a publicación en la <a href="https://revistas.unal.edu.co/index.php/rcolquim" target="_blank" rel="noopener noreferrer" className="magazine-link">Revista Colombiana de Química</a> y la <a href="https://revistas.uis.edu.co/index.php/revistaion/index" target="_blank" rel="noopener noreferrer" className="magazine-link">revista ION</a>.
         </p>
-        
+
         {/* Dates Section */}
         <div className="dates-container">
           {/* Large centered title rectangle */}
@@ -79,19 +79,19 @@ const Home: React.FC = () => {
             <img src={Date_logo} alt="Icono de calendario" className="date-icon" />
             <h2 className="date-title-text">¡FECHAS IMPORTANTES!</h2>
           </div>
-          
+
           {/* Two smaller rectangles side by side */}
           <div className="date-boxes-row">
-            <button 
-              className="date-box" 
+            <button
+              className="date-box"
               onClick={() => handleDateBoxClick("part2")}
             >
               <img src={Pointer_logo} alt="Icono de puntero" className="pointer-icon" />
               <p className="date-text">39 de julio, Fecha límite para recepción de resúmenes</p>
             </button>
-            
-            <button 
-              className="date-box" 
+
+            <button
+              className="date-box"
               onClick={() => handleDateBoxClick("part1")}
             >
               <img src={Pointer_logo} alt="Icono de puntero" className="pointer-icon" />
